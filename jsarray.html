@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //array methods
+      let Names = ["Nimmy", "swapna"];
+        Names.push("sri");
+        console.log(Names); // ["Nimmy", "swapna", "sri"]
+
+        let numbers = [1, 2, 3];
+        numbers.push(4, 5);
+        console.log(numbers); // [1, 2, 3, 4, 5]
+
+        let colors = ["pink"];
+        let newLength = colors.push("Blue", "Green");
+        console.log(colors); // ["pink", "Blue", "Green"]
+        console.log(newLength); // 3
+
+        console.log(colors.pop())
+        console.log(colors); // ["pink", "Blue"]
+
+        colors.unshift("red");
+        console.log(colors); // ["red", "Red", "Blue"]
+
+        console.log(colors.shift());
+        console.log(colors); // ["Red", "Blue"]
+
+        console.log(colors.splice(1, 1));
+        console.log(colors); // ["Red"]
+
+        console.log(colors.splice(0, 0, "Yellow", "Green"));
+
+        arr1 = [1, 2, 3, 4, 34, 65, 5, 4, 9, 77, 22, 6];   //output [1,2,22,3,34,4,5,6,65,77]
+        arr1.sort();
+        console.log(arr1);
+
+        arr1.reverse();
+        console.log(arr1);
+
+
+        ar = ["nimmy", "nimmy", "nimmy"];
+        console.log(ar.join(" "));
+
+
+        arr3 = [1, 2, 3];
+        arr4 = [4, 5, 6];
+        console.log(arr3.concat(arr4));
+
+        ar = ["nimmy", "nimmy", "nimmy"];
+        console.log(ar.indexOf("nimmy"));
+
+        console.log(ar.lastIndexOf("nimmy"));
+
+        console.log(ar.includes("nimmy"));
+
+        console.log(ar.includes("nimmy", 2));
+
+        console.log(ar.includes("nimmy", 1));
+
+
+        // even numbers 
+
+        let evenarr = [1, 2, 5, 6, 8, 9, 21, 22, 33, 54, 65, 78]
+        for (let i = 0; i < evenarr.length; i++) {
+            if (evenarr[i] % 2 == 0) {
+                console.log(evenarr[i]);
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
